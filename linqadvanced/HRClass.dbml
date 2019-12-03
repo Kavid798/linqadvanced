@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="HR" Class="HRClassDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=192.168.1.100;Initial Catalog=HR;Persist Security Info=True;User ID=sa" SettingsObjectName="linqadvanced.Properties.Settings" SettingsPropertyName="HRConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Employee" Member="Employee1s">
+    <Type Name="Employee1">
+      <Column Name="cEmployeeCode" Type="System.String" DbType="Char(6) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="vFirstName" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="vLastName" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="cCandidateCode" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+      <Column Name="vAddress" Type="System.String" DbType="VarChar(35)" CanBeNull="true" />
+      <Column Name="cCity" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="cState" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="cZip" Type="System.String" DbType="Char(10)" CanBeNull="true" />
+      <Column Name="cCountryCode" Type="System.String" DbType="Char(3)" CanBeNull="true" />
+      <Column Name="cPhone" Type="System.String" DbType="Char(15)" CanBeNull="true" />
+      <Column Name="vQualification" Type="System.String" DbType="VarChar(20)" CanBeNull="true" />
+      <Column Name="dBirthDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="cSex" Type="System.Char" DbType="Char(1)" CanBeNull="true" />
+      <Column Name="cCurrentPosition" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="cDesignation" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="cEmailId" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="cDepartmentCode" Type="System.String" DbType="Char(4)" CanBeNull="true" />
+      <Column Name="cRegion" Type="System.String" DbType="Char(20)" CanBeNull="true" />
+      <Column Name="imPhoto" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="dJoiningDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="dResignationDate" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="cSocialSecurityNo" Type="System.String" DbType="Char(15)" CanBeNull="true" />
+      <Column Name="cSupervisorCode" Type="System.String" DbType="Char(6)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Position" Member="Positions">
+    <Type Name="Position">
+      <Column Name="cPositionCode" Type="System.String" DbType="Char(4) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="vDescription" Type="System.String" DbType="VarChar(35)" CanBeNull="true" />
+      <Column Name="iBudgetedStrength" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="siYear" Type="System.Int16" DbType="SmallInt" CanBeNull="true" />
+      <Column Name="iCurrentStrength" Type="System.Int32" DbType="Int" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
